@@ -1,3 +1,8 @@
+import nltk
+nltk.download('vader_lexicon', download_dir='./nltk_data')
+nltk.data.path.append('./nltk_data')
+
+
 import streamlit as st
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
